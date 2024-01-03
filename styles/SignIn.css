@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    nav {
+        background-color: #7a7070;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+
+        section {
+            margin-left: 5rem;
+            color: white;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        
+        ul {
+            display: flex;
+            li {
+                list-style: none;
+                margin: 2rem;
+                font-size: 1.5rem;
+        
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    main {
+        .signInContainer {
+            background-color: #7a7070;
+            margin: 2rem;
+            border-radius: .5rem;
+            
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 400px;
+
+                :nth-child(1) {
+                    margin-bottom: 2rem;
+                    font-size: 3rem;
+                }
+                
+
+                input {
+                    width: 40vw;
+                    height: 40px;
+                    border-radius: .3rem;
+                    border: none;
+                    margin: 10px;
+                    padding-left: .5rem;
+                }
+
+                .btnSign {
+                    width: 200px;
+                    height: 35px;
+                    border-radius: .3rem;
+                    border:none;
+                    background-color: white;
+                    color: #7a7070;
+                    font-weight: bold;
+                }
+
+                :nth-child(5) {
+                    font-size: larger;
+                    padding-top: 1rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+
+    nav {
+        section {
+            font-size: 1.1rem;
+            margin-left: 2rem;
+        }
+
+        ul {
+            li {
+                margin: 1rem;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    main {
+        .signInContainer {
+            form {
+
+                input {
+                    width: 60vw;
+                }
+
+                .btnSign {
+                    width: 110px;
+                }
+
+                :nth-child(5) {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-device-width: 480px) and (max-device-width: 1024px) {
+    nav {
+        section {
+            font-size: 1.1rem;
+            margin-left: 2rem;
+        }
+
+        ul {
+            li {
+                margin: 1rem;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    main {
+        .signInContainer {
+            form {
+
+                .btnSign {
+                    width: 110px;
+                }
+
+                :nth-child(5) {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
