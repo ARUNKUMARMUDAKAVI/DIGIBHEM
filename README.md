@@ -1,1 +1,1 @@
-root = index.html
+index.html
